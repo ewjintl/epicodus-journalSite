@@ -28,9 +28,10 @@ Journal.prototype.vowelCount = function() {
   var totalVows = [];
   for(var i = 0; i <= totalLetters.length-1; i++) {
     if (vow.includes(totalLetters[i])) {
-      return totalVows.push("-").length;
+      totalVows.push("-")
     }
   }
+  return  totalVows.length;
 };
 Journal.prototype.consoCount = function() {
   var totalVowels =  this.body.split("");
